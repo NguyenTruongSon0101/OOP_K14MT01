@@ -13,4 +13,6 @@ public class Customer {
         System.out.println("So dien thoai:" +sDT);
         System.out.println("Dia chi: "+diaChi);
     }
+
+    
 }

@@ -19,4 +19,6 @@ public class Employee {
         int thucLanh = heSoLuong * luongCoBan;
         System.out.println("Luong nhan vien: "+thucLanh);
     }
+
+    
 }
