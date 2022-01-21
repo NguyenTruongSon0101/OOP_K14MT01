@@ -7,9 +7,15 @@ public class MyIntergerTestDrive {
         
         
         MyInterger myInterger2;
-        myInterger2 = new MyInterger(5);
-        myInterger2.greaterThan(myInterger);
-        myInterger2.greaterThan(myInterger);
+        myInterger2 = new MyInterger(0);
+        
+        System.out.println(myInterger2.greaterThan(myInterger));
+        System.out.println(myInterger2.lessThan(myInterger));
+
         myInterger.increment();
+
+        System.out.println(myInterger2.greaterThan(myInterger));
+        System.out.println(myInterger2.lessThan(myInterger));
+        
     }
 }
