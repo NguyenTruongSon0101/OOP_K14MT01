@@ -49,7 +49,7 @@ public class SanPham {
     }
     public void getThueNhapKhau(){
         
-        this.giamGia  = donGia / 10;;
+        this.giamGia  = donGia * (10/100);
     }
     public double setThueNhapKhau(){
         return this.giamGia;

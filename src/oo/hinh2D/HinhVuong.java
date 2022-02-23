@@ -2,7 +2,19 @@ package oo.hinh2D;
 
 public class HinhVuong {
     //attribute
-    String fileAmThanh;
+
+    //implementtation
+    private String fileAmThanh;
+
+
+    //interface
+    public void setfileAmThanh(){
+        this.fileAmThanh = fileAmThanh;
+    }
+
+    public String getfileAmThanh(){
+        return this.fileAmThanh;
+    }
 
     //method
     
