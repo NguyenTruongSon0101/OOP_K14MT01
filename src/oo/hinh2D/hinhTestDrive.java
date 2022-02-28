@@ -3,18 +3,28 @@ package oo.hinh2D;
 public class hinhTestDrive {
     public static void main(String[] args) {
         HinhTamGiac hinhTamGiac;
-        hinhTamGiac = new HinhTamGiac("tit tit tit.mp3");
+        hinhTamGiac = new HinhTamGiac();
         hinhTamGiac.xoay();
+        hinhTamGiac.setfileAmThanh("hinhVuong.aif");
         hinhTamGiac.phatNhac();
 
         HinhTron hinhTron;
-        hinhTron = new HinhTron("reng reng reng.mp3");
+        hinhTron = new HinhTron();
         hinhTron.xoay();
-        hinhTron.phatNhac();        
+        hinhTron.setfileAmThanh("hinhTron.aif");        
+        hinhTron.phatNhac();
 
         HinhVuong hinhVuong;
-        hinhVuong = new HinhVuong("ting ting ting.mp3");
+        hinhVuong = new HinhVuong();
         hinhVuong.xoay();
+        hinhVuong.setfileAmThanh("hinhTamGiac.aif");
         hinhVuong.phatNhac();
+
+        HinhTrungBienHinh hinhTrungBienHinh = new HinhTrungBienHinh();
+        hinhTrungBienHinh.setXpoint(5);
+        hinhTrungBienHinh.setyPoint(7);
+        hinhTrungBienHinh.xoay();
+        hinhTrungBienHinh.setfileAmThanh("amoeba.hif");
+        hinhTrungBienHinh.phatNhac();
     }
 }
