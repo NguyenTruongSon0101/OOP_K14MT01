@@ -8,7 +8,7 @@ public class HinhVuong {
 
 
     //interface
-    public void setfileAmThanh(){
+    public void setfileAmThanh(String fileAmThanh){
         this.fileAmThanh = fileAmThanh;
     }
 

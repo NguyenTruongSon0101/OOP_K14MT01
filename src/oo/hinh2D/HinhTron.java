@@ -7,7 +7,7 @@ public class HinhTron {
 
 
     //interfaces
-    public void setfileAmThanh(){
+    public void setfileAmThanh(String fileAmThanh){
         this.fileAmThanh = fileAmThanh;
     }
 

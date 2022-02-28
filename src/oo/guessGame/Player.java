@@ -5,7 +5,7 @@ public class Player {
     private int number = 0;
 
     //interfaces
-    public void setnumber(){
+    public void setnumber(int number){
         this.number = number;
     }
 

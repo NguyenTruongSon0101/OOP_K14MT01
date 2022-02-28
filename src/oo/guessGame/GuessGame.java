@@ -8,14 +8,14 @@ public class GuessGame {
 
 //interfaces
 
-public void setp1(){
+public void setp1(Player p1){
     this.p1 = p1;
 }
 public Player getp1(){
     return this.p1;
 }
 
-public void setp2(){
+public void setp2(Player p2){
     this.p2 = p2;
 }
 public Player getp2(){
@@ -23,7 +23,7 @@ public Player getp2(){
 }
 
 
-public void setp3(){
+public void setp3(Player p3){
     this.p3 = p3;
 }
 public Player getp3(){

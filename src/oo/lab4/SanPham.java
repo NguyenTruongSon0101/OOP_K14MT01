@@ -25,7 +25,7 @@ public class SanPham {
         this(tenSP, donGia, 0);
     }
 
-    public void setTenSP(){
+    public void setTenSP(String tenSP){
         this.tenSP = tenSP;
     }
 
@@ -33,7 +33,7 @@ public class SanPham {
         return this.tenSP;
     }
 
-    public void setDonGia(){
+    public void setDonGia(double donGia){
         this.donGia = donGia;
     }
 
