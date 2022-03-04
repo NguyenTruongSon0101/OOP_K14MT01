@@ -13,7 +13,7 @@ public class hinhTestDrive {
         hinhTron.xoay();
         hinhTron.setfileAmThanh("hinhTron.aif");        
         hinhTron.phatNhac();
-
+  
         HinhVuong hinhVuong;
         hinhVuong = new HinhVuong();
         hinhVuong.xoay();

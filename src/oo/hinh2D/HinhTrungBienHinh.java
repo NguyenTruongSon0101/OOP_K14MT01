@@ -25,7 +25,7 @@ public class HinhTrungBienHinh extends Hinh{
     }
     @Override
     public void xoay(){
-        System.out.println("Xoay hinh theo diem x: "+this.xpoint +" "+this.yPoint);;
+        System.out.println("Xoay hinh theo diem x: "+this.xpoint +" y:"+this.yPoint);;
     }
 
 }

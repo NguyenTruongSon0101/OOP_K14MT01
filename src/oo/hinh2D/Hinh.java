@@ -27,6 +27,6 @@ public class Hinh {
 
     void phatNhac(){
         
-        System.out.println("rang: "+fileAmThanh);
+        System.out.println("rang: .aif  "+fileAmThanh);
     }
 }
