@@ -1,4 +1,5 @@
 package oo.hangThucPham;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 public class HangThucPham {
     //attribute
@@ -69,6 +70,15 @@ public class HangThucPham {
             isHetHan =false;
         }
         return isHetHan;
+    }
+
+    public String toString(){
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/mm/yyyy");
+        String str = "Ma hang: "+this.maHang + " Ten hang: "+this.tenHang;
+        str += "Don gia: "+this.donGia;
+        str += "Ngay SX: "+simpleDateFormat.format(this.ngaySanXuat);
+        str += "Ngay Het Han: "+simpleDateFormat.format(this.ngayHetHan);
+        return str;
     }
     
 }
