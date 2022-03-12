@@ -11,8 +11,13 @@ public class SinhVien {
     private float diemLT;
     private float diemTH;
 
+    //interfaces
     //constructor
     public  SinhVien(){
+        this.maSV = 0;
+        this.hoTen = null;
+        this.diemLT = 0f;
+        this.diemTH = 0f;
     }
 
     public SinhVien(int maSV, String hoTen, float diemLT, float diemTH ){
@@ -23,7 +28,7 @@ public class SinhVien {
     }
 
     //method 
-    //interfaces
+    
     public void setmaSV(int maSV){
         this.maSV = maSV;
     }
@@ -58,14 +63,14 @@ public class SinhVien {
         return diemTB;
     }
     public void nhap(){
-        System.out.println("Nhap ma so sinh vien:");
+        System.out.print("Nhap ma so sinh vien:");
         this.maSV = scanner.nextInt();
         scanner.nextLine();
         System.out.print("Nhap ho ten sinh vien: ");
         this.hoTen = scanner.nextLine();
-        System.out.println("Nhap diem ly thuyet: ");
+        System.out.print("Nhap diem ly thuyet: ");
         this.diemLT = scanner.nextFloat();
-        System.out.println("Nhap diem thuc hanh: ");
+        System.out.print("Nhap diem thuc hanh: ");
         this.diemTH = scanner.nextFloat();
     }
     public String toString(){

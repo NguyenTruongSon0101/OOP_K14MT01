@@ -6,20 +6,43 @@ public class Vehicle {
     Scanner scanner = new Scanner(System.in);
     //attribute
     //emplementtation
+
+    private String tenChuXe;
+    private String loaixe;
     private int xyLanh;
     private double cost;
-    private float tax;
+    
 
     //constructor
     public Vehicle(){
+        this.tenChuXe = null;
+        this.loaixe = null;
+        this.xyLanh = 0;
+        this.cost = 0;
 
     }
-    public Vehicle(int xyLanh, double cost){
+    public Vehicle(String tenChuXe, String loaixe, int xyLanh, double cost){
+        this.tenChuXe = tenChuXe;
+        this.loaixe = loaixe;
         this.xyLanh = xyLanh;
         this.cost = cost;
     }
     //method 
     //interfaces
+    public void settenChuXe(String tenChuXe){
+        this.tenChuXe = tenChuXe;
+    }
+    public String gettenChuXe(){
+        return this.tenChuXe;
+    }
+
+    public void setloaiXe(String loaiXe){
+        this.loaixe = loaiXe;
+    }
+    public String getloaiXe(){
+        return this.loaixe;
+    }
+    
     public void setxyLanh(int xyLanh){
         this.xyLanh = xyLanh;
     }
@@ -33,14 +56,11 @@ public class Vehicle {
     public double getcost(){
         return this.cost;
     }
-    public void settax(float tax){
-        this.tax = tax;
-    }
-    public float gettax(){
-        return this.tax;
-    }
+    
 
     public void nhap(){
+        System.out.println("Nhap chu xe: ");
+
         System.out.println("Nhap XyLanh xe: ");
         this.xyLanh = scanner.nextInt();
         scanner.nextLine();
@@ -50,14 +70,15 @@ public class Vehicle {
     }
     
     public float tax(){
+        float tax = 0.0f;
         if(this.xyLanh < 100){
-            tax = (float) (cost *(1/100));
+            tax = (float) (this.cost *0.01);
         }else{
             if(this.xyLanh >= 100 && this.xyLanh < 200){
-                tax = (float) (cost *(3/100));
+                tax = (float) (this.cost *0.03);
             }else{
-                if(this.xyLanh > 200){
-                    tax = (float) (cost *(5/100));
+                if(this.xyLanh >= 200){
+                    tax = (float) (this.cost *0.05);
                 }
             }      
         }
@@ -70,5 +91,22 @@ public class Vehicle {
         return str ;
     }
         
+    void menu(){
+        
+        int suLuaChon;
+        do{
+            System.out.println("------------------MENU------------------");
+            System.out.println("1. .");
+            System.out.println("2. .");
+            System.out.println("3. Thoat.");
+            
+            System.out.println("------------------MENU------------------");
+            suLuaChon = scanner.nextInt();
+            switch(suLuaChon){
+                case 1:break;
+                case 2:break;
+                default: System.out.println("");
+            }}while(suLuaChon >= 1 && suLuaChon <= 2);
+    }
     
 }

@@ -9,8 +9,10 @@ public class SinhVienTestDrive {
     SinhVien sv2 = new SinhVien(123789, "Le Thanh Tung", 8, 9);
     SinhVien sv3 = new SinhVien();
     sv3.nhap();
-    System.out.println("SV1: "+ sv1.toString());
-    System.out.println("SV2: "+ sv2.toString());
-    System.out.println("SV3: "+ sv3.toString());
+    
+
+    System.out.printf("MSSV: %d,\tHo ten: %s,\tDiem TB : %f",sv1.getmaSV(),sv1.gethoTen(),sv1.tinhDiemTB());
+    System.out.printf("\nMSSV: %d,\tHo ten: %s,\tDiem TB : %f",sv2.getmaSV(),sv2.gethoTen(),sv2.tinhDiemTB());
+    System.out.printf("\nMSSV: %d,\tHo ten: %s,\tDiem TB: %f",sv3.getmaSV(),sv3.gethoTen(),sv3.tinhDiemTB());
     }
 }

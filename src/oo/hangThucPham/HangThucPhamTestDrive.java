@@ -15,7 +15,7 @@ public class HangThucPhamTestDrive {
         String ngay1 = "08/03/2022";
         String ngay2 = "12/12/2022";
         HangThucPham htp1 = new HangThucPham("123456", "thit", 100000,simpleDateFormat.parse(ngay1),simpleDateFormat.parse(ngay2));
-        System.out.println(htp1);
+        System.out.println(htp1.toString());
         if(htp1.kiemTraHetHan()){
             System.out.println("Het han!!!");}
         else{
