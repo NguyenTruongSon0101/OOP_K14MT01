@@ -14,6 +14,13 @@ public class sinhVien {
         this.diaChi = null;
         this.sdt = 0;
     }
+
+    public sinhVien(int maSV, String hoTen, String diaChi, double sdt){
+        this.maSV = maSV;
+        this.hoTen = hoTen;
+        this. diaChi = diaChi;
+        this.sdt = sdt;
+    }
     public void setMaSV(int maSV) {
         this.maSV = maSV;
     }
