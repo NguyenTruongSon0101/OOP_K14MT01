@@ -12,7 +12,7 @@ public class ChuyenXeTestDrive {
             System.out.println("\t0.exit");
             System.out.println("\t1.Them chuyen xe noi thanh");
             System.out.println("\t2.Them chuyen xe ngoai thanh");
-            System.out.println("Hien thi dnah muc chuyen xe");
+            System.out.println("\3Hien thi dnah muc chuyen xe");
             System.out.println("\t------------------------");
             x = scanner.nextInt();
             switch(x){

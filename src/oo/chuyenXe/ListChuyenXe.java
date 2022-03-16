@@ -6,7 +6,7 @@ public class ListChuyenXe {
     private double sum1 = 0, sum2 = 0;
     public void listCX(){
         countCX = 0;
-        for(int i = 0; i < 100 ; i++){
+        for(int i = 0; i < 10 ; i++){
             CX[i] = new ChuyenXe();
         }
     }
