@@ -60,9 +60,7 @@ public class ListCD {
         for(int x = 0; x < countCD; x++){
             
             for(int y = x +1; y < countCD; y++){
-                String s1 = CD[x].getTuaCD();
-                String s2 = CD[y].getTuaCD();
-                if(s1.compareTo(s2) > 0){
+                if(CD[x].getTuaCD().compareTo(CD[y].getTuaCD()) > 0){
                     temp = CD[y];
                     CD[y] = CD[x];
                     CD[x] = temp;
