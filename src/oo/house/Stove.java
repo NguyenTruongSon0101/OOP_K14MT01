@@ -5,3 +5,4 @@ public class Stove {
     double length;
     int numOfCookers;
 }
+ 

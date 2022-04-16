@@ -8,12 +8,12 @@ public class ChuyenXeTestDrive {
         Scanner scanner = new Scanner(System.in);
         ListChuyenXe dscx = new ListChuyenXe();
         do{
-            System.out.println("\n\t---------------------");
+            System.out.println("\n\t.---------------------");
             System.out.println("\t0.exit");
             System.out.println("\t1.Them chuyen xe noi thanh");
             System.out.println("\t2.Them chuyen xe ngoai thanh");
-            System.out.println("\3Hien thi dnah muc chuyen xe");
-            System.out.println("\t------------------------");
+            System.out.println("\t3.Hien thi dnah muc chuyen xe");
+            System.out.println("\t.------------------------");
             x = scanner.nextInt();
             switch(x){
                 case 1: dscx.listcx(1);

@@ -35,6 +35,7 @@ public class ChuyenXeNoiThanh extends ChuyenXe {
         super.nhap();
         System.out.print("Nhap so tuyen: ");
         this.soTuyen = scanner.nextInt();
+        System.out.println("Nhap so Km di duoc: ");
         this.soKmDiDuoc = scanner.nextDouble();
     }
     public String toString(){

@@ -1,6 +1,9 @@
 package oo.animal;
 
 public class Cho extends hoCho {
+    public Cho(){
+        System.out.println("contructor mac dinh cua cho");
+    }
     @Override
     public void keu() {
         System.out.println("Cho keu GAU GAU");

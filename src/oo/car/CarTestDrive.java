@@ -1,6 +1,6 @@
 package oo.car;
 
-import javax.swing.event.SwingPropertyChangeSupport;
+
 
 public class CarTestDrive {
     
@@ -8,5 +8,6 @@ public class CarTestDrive {
         Car car = new Car();
         System.out.println("color: "+car.getcarColor());
         System.out.println("price: "+car.getcarPrice());
+        
     }
 }

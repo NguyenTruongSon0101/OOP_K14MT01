@@ -8,6 +8,9 @@ public class Animal {
     // getter setter
     // interface
 
+    public Animal(){
+        System.out.println("contructor mac dinh cua animal");
+    }
     public void keu(){
         System.out.println("Keu ...");
     }
