@@ -10,7 +10,7 @@ public class HangSanhSu extends HangHoa {
     private Date ngayNhapKho;
 
     // interfaces
-
+    //constructor
     public HangSanhSu() {
 
     }
@@ -37,10 +37,10 @@ public class HangSanhSu extends HangHoa {
     public String getNhaSX() {
         return nhaSX;
     }
-
+    //nhap hang sanh su
     @Override
     public void nhap() {
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/mm/yyyy");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
         // TODO Auto-generated method stub
         super.nhap();
         System.out.print("Nhap nha san xuat: ");
@@ -55,27 +55,27 @@ public class HangSanhSu extends HangHoa {
         }
 
     }
-
+    //tinh VAT
     @Override
     public double tinhVAT(double VAT) {
         // TODO Auto-generated method stub
         return super.tinhVAT(VAT);
     }
-
-    @Override
+    //toString
+    @Override   
     public String toString() {
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/mm/yyyy");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
         // TODO Auto-generated method stub
         return super.toString() + "Nha san xuat: " + this.nhaSX + "|" + "Ngay nhap kho: "
                 + simpleDateFormat.format(this.ngayNhapKho);
     }
-
+    //tinh thoi gian lưu kho
     public long tinhThoiGianLuuKho() {
         Date hienTai = new Date();
         long noDay = (hienTai.getTime() - ngayNhapKho.getTime()) / (24 * 3600 * 1000);
         return noDay;
     }
-
+    //danh gia muc do buon ban
     @Override
     public void danhGiaMucDoBuonBan() {
         // TODO Auto-generated method stub

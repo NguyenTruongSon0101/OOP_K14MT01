@@ -9,7 +9,7 @@ public class DanhSachHangHoa {
     public void them(HangHoa hangHoa) {
         dshangHoa.add(hangHoa);
     }
-
+    //them hang hoa tu ban phim
     public void themTuBP(int loaiHangHoa) {
         if (loaiHangHoa == 1) {
             HangThucPham hangThucPham = new HangThucPham();
@@ -25,13 +25,13 @@ public class DanhSachHangHoa {
             this.dshangHoa.add(hangDienMay);
         }
     }
-
+    //in danh sach hang hoa
     public void inDSHangHoa() {
         for (HangHoa hangHoa : dshangHoa) {
             System.out.println(hangHoa);
         }
     }
-
+    //tim hang hoa theo ma
     public HangHoa timHangHoaTheoMa(String maHH) {
         HangHoa hangHoa = null;
         for (HangHoa hh : dshangHoa) {
@@ -42,7 +42,7 @@ public class DanhSachHangHoa {
         System.out.println(hangHoa);
         return hangHoa;
     }
-
+    // danh gia muc do buon ban
     public HangHoa danhGiaMucDoBuonBan() {
         HangHoa hangHoa = null;
         for (HangHoa hh : dshangHoa) {
@@ -50,18 +50,18 @@ public class DanhSachHangHoa {
         }
         return hangHoa;
     }
-
+    //Xoa hang hoa
     public void xoaHangHoa(HangHoa hangHoa) {
         dshangHoa.remove(hangHoa);
 
     }
-
+    //Tim hang hoa theo vi tri
     public int timHangHoaTheoViTri(HangHoa hangHoa) {
         int viTri = -1;
         viTri = dshangHoa.indexOf(hangHoa);
         return viTri;
     }
-
+    //Sua hang hoa
     public HangHoa suaHangHoa(int viTri, HangHoa hangHoa) {
         timHangHoaTheoViTri(hangHoa);
         dshangHoa.set(viTri, hangHoa);

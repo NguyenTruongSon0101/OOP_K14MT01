@@ -12,12 +12,12 @@ public class HangHoaTestDrive {
         Date date = new Date();
 
         SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
-        String sxtp1 = "20/1/2022";
-        String hhtp1 = "20/1/2023";
-        String sxtp2 = "1/1/2022";
-        String hhtp2 = "5/3/2022";
-        String sxtp3 = "3/3/2022";
-        String hhtp3 = "3/3/2023";
+        String sxtp1 = "20/01/2022";
+        String hhtp1 = "20/01/2023";
+        String sxtp2 = "01/01/2022";
+        String hhtp2 = "05/03/2022";
+        String sxtp3 = "03/03/2022";
+        String hhtp3 = "03/03/2023";
         String ss1 = "15/03/2022";
         String ss2 = "10/04/2022";
         String ss3 = "25/01/2022";
@@ -65,6 +65,7 @@ public class HangHoaTestDrive {
                     dSHangHoa.them(hangDienMay2);
                     dSHangHoa.them(hangDienMay3);
                     dSHangHoa.them(hangDienMay4);
+                    dSHangHoa.inDSHangHoa();
                     break;
                 case 2:
                     do {
@@ -93,7 +94,10 @@ public class HangHoaTestDrive {
                     System.out.println("Nhap ma hang hoa can xoa: ");
                     scanner.nextLine();
                     tim = scanner.nextLine();
+                    System.out.println("Hang hoa can xoa !!!");
                     dSHangHoa.xoaHangHoa(dSHangHoa.timHangHoaTheoMa(tim));
+                    System.out.println("Danh sach hang hoa sau khi xoa !!!");
+
                     dSHangHoa.inDSHangHoa();
                     break;
                 case 4:

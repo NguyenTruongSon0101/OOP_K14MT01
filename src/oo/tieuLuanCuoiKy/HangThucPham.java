@@ -14,6 +14,7 @@ public class HangThucPham extends HangHoa {
     private String nhaCungCap;
 
     // interfaces
+    //constructor
     public HangThucPham() {
     }
 
@@ -45,10 +46,10 @@ public class HangThucPham extends HangHoa {
     public Date getNgayHetHan() {
         return ngayHetHan;
     }
-
+    //nhap hang thuc pham
     @Override
     public void nhap() {
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/mm/yyyy");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
         // TODO Auto-generated method stub
         super.nhap();
         System.out.print("Nhap ngay san xuat: ");
@@ -69,7 +70,7 @@ public class HangThucPham extends HangHoa {
         this.nhaCungCap = scanner.nextLine();
 
     }
-
+    //kiem tra han su dung
     boolean kiemTraHetHan() {
         boolean isHetHan = false;
         Date hienTai = new Date();
@@ -80,21 +81,21 @@ public class HangThucPham extends HangHoa {
         }
         return isHetHan;
     }
-
+    //tinh VAT
     @Override
     public double tinhVAT(double VAT) {
         VAT = this.getDonGia() * (5 / 100);
         return super.tinhVAT(VAT);
     }
-
+    //toString
     @Override
     public String toString() {
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/mm/yyyy");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
         // TODO Auto-generated method stub
         return super.toString() + " Ngay SX: " + simpleDateFormat.format(this.ngaySX) + "|" + " Ngay HH: "
                 + simpleDateFormat.format(ngayHetHan) + "|" + "Nha cung cap: " + this.nhaCungCap;
     }
-
+    // danh gia muc do buon ban
     @Override
     public void danhGiaMucDoBuonBan() {
         // TODO Auto-generated method stub

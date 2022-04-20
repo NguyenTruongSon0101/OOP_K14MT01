@@ -59,7 +59,7 @@ public class HangHoa {
             System.out.println("Don gia phai lon hon 0 !");
         }
     }
-
+    //constructor
     public HangHoa() {
 
     }
@@ -73,7 +73,7 @@ public class HangHoa {
         this.setDonGia(donGia);
 
     }
-
+    //Nhap hang hoa
     public void nhap() {
         System.out.print("Nhap ma hang: ");
         this.setMaHang(scanner.nextLine());
@@ -86,7 +86,7 @@ public class HangHoa {
         this.donGia = scanner.nextDouble();
         scanner.nextLine();
     }
-
+    // toString
     @Override
     public String toString() {
 
@@ -94,12 +94,12 @@ public class HangHoa {
         return "Ma hang: " + this.maHang + "|" + " Ten hang: " + this.tenHang + "|" + " SL ton kho: "
                 + this.soLuongTonKho + " Don gia: " + donGia + "|";
     }
-
+    //tinh VAT
     public double tinhVAT(double VAT) {
         VAT = this.donGia * (10 / 100);
         return VAT;
     }
-
+    //Danh gia muc do buon ban
     public void danhGiaMucDoBuonBan() {
 
     }

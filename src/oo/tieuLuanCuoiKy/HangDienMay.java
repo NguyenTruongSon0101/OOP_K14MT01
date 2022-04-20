@@ -6,10 +6,11 @@ public class HangDienMay extends HangHoa {
     private double congSuat;
 
     // interfaces
+    //constructor
     public HangDienMay() {
 
     }
-
+    
     public HangDienMay(String maHang, String tenHang, int soLuongTonKho, double donGia, double thoiGianBH,
             double congSuat) {
         super(maHang, tenHang, soLuongTonKho, donGia);
@@ -40,7 +41,7 @@ public class HangDienMay extends HangHoa {
             System.out.println("cong suat phai lon hon 0 !");
         }
     }
-
+    //Nhap hang dien may
     @Override
     public void nhap() {
         // TODO Auto-generated method stub
@@ -52,19 +53,19 @@ public class HangDienMay extends HangHoa {
         this.congSuat = scanner.nextDouble();
         scanner.nextLine();
     }
-
+    //tinh VAT
     @Override
     public double tinhVAT(double VAT) {
         // TODO Auto-generated method stub
         return super.tinhVAT(VAT);
     }
-
+    //toString
     @Override
     public String toString() {
         // TODO Auto-generated method stub
         return super.toString() + " TG bao hanh: " + this.thoiGianBH + "|" + " Cong suat: " + this.congSuat;
     }
-
+    //danh gia muc do buon ban
     @Override
     public void danhGiaMucDoBuonBan() {
         // TODO Auto-generated method stub
